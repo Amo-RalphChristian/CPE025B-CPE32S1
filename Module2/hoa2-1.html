@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pleasant Mount School</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background-color: #eef2f3;
+            color: #333;
+        }
+
+        header {
+            background-color: #4b6cb7;
+            background-image: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4b6cb7;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        #mission-statement p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        #mission-statement ol {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        #mission-statement li {
+            margin-bottom: 12px;
+        }
+
+        #upcoming-events ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        #upcoming-events li {
+            margin: 10px 0;
+        }
+
+        .outdoor {
+            background-color: #e6f7ff;
+            padding: 5px;
+            border-left: 4px solid #4b6cb7;
+        }
+
+        .date {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        #contact p {
+            margin: 8px 0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #182848;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Pleasant Mount School</h1>
+    <p>Inspiring excellence, character, and lifelong learning</p>
+</header>
+
+<div class="container">
+
+    <!-- MISSION -->
+    <div class="card" id="mission-statement">
+        <h2>Mission Statement</h2>
+        <p>
+            As a caring and learning community imbued with <strong>Pleasanite values</strong>,
+            The Pleasant Mount School commits itself to:
+        </p>
+
+        <ol>
+            <li>
+                Promote quality basic education and Christian formation among its students
+                with preference for those who have learning difficulty;
+            </li>
+            <li>
+                Mold students to be achievers and demonstrate excellence in all learning areas,
+                particularly in mathematics, communication arts, and science and technology;
+            </li>
+            <li>
+                Administer immersion programs that give students opportunities to experience
+                life’s differences outside the school community and realize genuine service
+                in serving others;
+            </li>
+            <li>
+                Provide ongoing formation for the total development of the administrators,
+                faculty, and staff competence to respond to the needs of the school community; and
+            </li>
+            <li>
+                Encourage parents to be committed to fostering an orderly and wholesome
+                home environment in school and in their respective homes.
+            </li>
+        </ol>
+    </div>
+
+    <!-- UPCOMING EVENTS -->
+    <div class="card" id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>Technology Fair – <span class="date">June 10</span></li>
+            <li class="outdoor" title="Outdoor Event">
+                Creative Arts Day – <span class="date">June 15</span>
+            </li>
+            <li class="outdoor" data-event-type="outdoor" title="Outdoor Event">
+                Annual Sports Fest – <span class="date">June 20</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card" id="contact">
+        <h2>Contact Us</h2>
+        <p title="Email Pleasant Mount School">
+            Email: info@pleasantmountschool.edu
+        </p>
+        <p title="Call Pleasant Mount School">
+            Phone: (555) 987-6543
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Pleasant Mount School | All Rights Reserved
+</footer>
+
+</body>
+</html>
