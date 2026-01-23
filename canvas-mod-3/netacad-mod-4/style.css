@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .float-left {
     float: left;
     margin-right: 10px;
@@ -90,3 +91,97 @@ img {
   text-align: right;
   margin-top: 10px;
 }
+=======
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+.column {
+    float: left; /* or right, depending on desired direction */
+    width: 33.33%; /* Assuming three equal-width columns, adjust as needed */
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}  
+
+.column {
+  float: left; /* Align columns side by side */
+  padding: 10px;
+}
+
+.large {
+  width: 50%; /* Large column takes half of the container's width */
+}
+
+.medium {
+  width: 30%; /* Medium column takes 30% of the container's width */
+}
+
+.small {
+  width: 20%; /* Small column takes 20% of the container's width */
+}
+
+.float-left {
+  float: left;
+  margin-right: 10px; /* Space between the image and the text */
+}
+
+.text-image-container img {
+  width: 200px;
+  height: auto;
+}
+
+.text-image-container p {
+  text-align: justify;
+}
+
+.navbar {
+  background-color: lightblue;
+  overflow: hidden; /* Clear the floats */
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  float: left;
+  padding: 10px 15px;
+}
+
+.menu-item:hover {
+  background-color: lightgrey;
+}
+
+.testimonial-section {
+  overflow: hidden; /* Clear the floats */
+}
+
+.testimonial {
+  float: left;
+  width: 33.333%; /* 3 testimonials per row */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 10px;
+  box-shadow: 2px 2px 5px #aaa;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial h4 {
+  font-weight: normal;
+  text-align: right;
+  margin-top: 10px;
+}
+>>>>>>> 8e8b5c7ae6a6748ef0452a4f3beb316e3ef7ebdc

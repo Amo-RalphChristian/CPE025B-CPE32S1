@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div {
     background: lightblue;
     color: yellow;
@@ -67,4 +68,75 @@ a:hover {
 a:active {
     color: #F00; /* Typically a bright color */
     font-weight: bold; /* Makes the text bold */
+=======
+div {
+    background: lightblue;
+    color: yellow;
+}
+
+.button {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: red;
+}
+
+img {
+    width: 600px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 80%;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+    border: 2px dashed #333;
+    padding: 15px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.box1 {
+    border: 2px solid #007BFF;
+    padding: 10px;
+    margin: 15px;
+    background-color: #E0F0FF;
+}
+
+.box2 {
+    border: 2px solid #28A745;
+    padding: 10px;
+    margin: 15px;
+    background-color: #E6FFED;
+}
+
+/* Unvisited Link */
+a:link {
+    color: #0000EE; /* Standard link color */
+    text-decoration: underline; /* Underlined by default */
+}
+  
+  /* Visited Link */
+a:visited {
+    color: #551A8B; /* Typically a darker shade */
+}
+  
+  /* Link when hovered */
+a:hover {
+    color: #FF0000; /* Changes color to red */
+    background-color: #F0F0F0; /* Adds a light gray background */
+    text-decoration: none; /* Removes underline */
+}
+  
+  /* Active Link (while being clicked) */
+a:active {
+    color: #F00; /* Typically a bright color */
+    font-weight: bold; /* Makes the text bold */
+>>>>>>> 8e8b5c7ae6a6748ef0452a4f3beb316e3ef7ebdc
 }
