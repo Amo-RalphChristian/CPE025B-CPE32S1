@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TIP Satisfactory Survey</title>
+
+        <style>
+            body {
+            background: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            }
+
+            h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            }
+
+            #description {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 30px;
+            }
+
+            form {
+            max-width: 600px;
+            margin: 40px auto;
+            background: lightgray;
+            padding: 50px;
+            border: 2px solid black;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+            }
+
+            label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            }
+
+            input, select, textarea, button {
+                padding: 10px;
+                margin-top: 8px;
+                border: none;
+                border-radius: 6px;
+                font-size: 16px;
+            }
+
+            input, select, textarea {
+            background: lightyellow;
+            width: 100%;
+            }
+
+            input::placeholder, textarea::placeholder {
+                color: black;
+            }
+
+            .inline-group input {
+            width: auto;
+            margin-right: 8px;
+            }
+
+            .inline-group label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 15px;
+            }
+
+            textarea {
+            resize: vertical;
+            }
+
+            button {
+            background: yellow;
+            color: #000;
+            font-weight: bold;
+            margin-top: 25px;
+            cursor: pointer;
+            }
+
+            button:hover {
+            background: darkorange;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+
+        <h1 id="title">TIP Satisfactory Survey</h1>
+
+        <p id="description">
+            Answer honestly !!!!!!!!
+        </p>
+
+        <form id="survey-form">
+
+            <!-- Name -->
+            <label id="name-label" for="name">Your Name</label>
+            <input 
+            type="text" 
+            id="name" 
+            placeholder="e.g. Jose Protacio Rizal Mercado y Alonso Realonda"
+            required
+            >
+
+            <!-- Email -->
+            <label id="email-label" for="email">Email</label>
+            <input 
+            type="email" 
+            id="email" 
+            placeholder="e.g. me@email.com"
+            required
+            >
+
+            <!-- Number -->
+            <label id="age-label" for="age">
+            Age (optional, but we know you're young at heart)
+            </label>
+            <input 
+            type="number" 
+            id="number" 
+            min="0" 
+            max="1000"
+            placeholder="e.g. 0 - 1000"
+            >
+        </form>
+
+        <form id="survey-form">
+            
+            <!-- Dropdown -->
+            <label for="dropdown">Pick your poison (Program)</label>
+            <select id="dropdown">
+            <option value="">Choose</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            </select>
+
+            <!-- Buttons -->
+            <label>Student Type</label>
+            <div class="inline-group">
+            <input type="radio" name="tpye" value="regular">
+            <label>Regular</label><br>
+
+            <input type="radio" name="type" value="irregular">
+            <label>Irregular</label><br>
+            </div>
+
+            <!-- Checkboxes -->
+            <label>What do you like about TIP</label>
+            <div class="inline-group">
+            <input type="checkbox" value="nothing">
+            <label>nothing</label><br>
+
+            <input type="checkbox" value="none">
+            <label>none</label><br>
+
+            <input type="checkbox" value="n/a">
+            <label>n/a</label><br>
+            </div>
+
+            <!-- Textarea -->
+            <label for="comments">Any Final Comments About TIP</label>
+            <textarea 
+            id="comments" 
+            rows="4"
+            placeholder="Type your comments here..."
+            ></textarea>
+
+            <!-- Submit -->
+            <button id="submit" type="submit">
+            Submit = OSA
+            </button>
+
+        </form>
+
+    </body>
+</html>
