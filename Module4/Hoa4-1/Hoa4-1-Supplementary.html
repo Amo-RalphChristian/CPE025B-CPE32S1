@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav a {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AMO, RALPH CHRISTIAN M.</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>Emergency Transponder System Using NodeMCU</h3>
+                <p>A wireless emergency alert system developed using NodeMCU and Firebase. The device allows users to send SOS signals to a central monitoring station in real time. The system uses Wi-Fi communication and cloud integration to ensure fast and reliable emergency notification.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Smart Home Automation System</h3>
+                <p>A home automation system that allows users to remotely control appliances such as lights and fans using a web interface. The system uses a microcontroller, relays, and Wi-Fi connectivity to enable real-time device control and monitoring.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Network Topology Design and Implementation Using Cisco Packet Tracer</h3>
+                <p>Designed and simulated a complete network infrastructure using Cisco routers and switches. The project involved IP addressing, subnetting, router configuration, and connectivity testing to ensure reliable communication between devices.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>IoT-Based Environmental Monitoring System</h3>
+                <p>Developed a system that enables two NodeMCU devices to communicate binary data using Firebase Cloud Storage. Switches were used for input and LEDs for output, demonstrating remote device communication through cloud services.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>FPGA-Based Shift Register Simulation Using VHDL</h3>
+                <p>Designed and simulated shift registers using VHDL in an FPGA simulation environment. The project demonstrated understanding of digital logic design, sequential circuits, and hardware description languages.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Binary Data Communication Between Two NodeMCUs Using Cloud Storage</h3>
+                <p>Developed a system that enables two NodeMCU devices to communicate binary data using Firebase Cloud Storage. Switches were used for input and LEDs for output, demonstrating remote device communication through cloud services.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 | AMO, RALPH CHRISTIAN M. | All Rights Reserved</p>
+    </footer>
+
+
+</body>
+</html>
