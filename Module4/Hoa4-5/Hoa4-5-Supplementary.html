@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrightPath – For Everyone</title>
+  <link rel="stylesheet" href="Hoa4-5-Supplementary.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!--HEADER-->
+  <header role="banner">
+    <a href="#" class="logo" aria-label="BrightPath home">Bright<span>Path</span></a>
+
+    <nav aria-label="Main navigation">
+      <ul role="list">
+        <li><a href="#" aria-current="page">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--HERO-->
+  <section class="hero" aria-labelledby="hero-heading">
+    <h1 id="hero-heading">A Website Built for <em>Everyone</em></h1>
+    <p>We believe the web should be open, readable, and usable — no matter who you are or how you browse.</p>
+    <div class="hero-actions">
+      <a href="#services" class="btn btn-primary">Explore Services</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </section>
+
+  <!--MAIN-->
+  <main id="main-content">
+
+    <!--Services-->
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading" class="section-title">Our Services</h2>
+      <p class="section-desc">Simple, honest services designed with clarity in mind.</p>
+
+      <div class="cards" role="list">
+
+        <article class="card" role="listitem">
+          <div class="card-icon" aria-hidden="true">🧭</div>
+          <h3>Easy Navigation</h3>
+          <p>Menus and links are clearly labeled so you always know where you are and where you're going.</p>
+          <a href="#" class="card-link">Learn more about navigation <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="card" role="listitem">
+          <div class="card-icon" aria-hidden="true">🔤</div>
+          <h3>Readable Text</h3>
+          <p>We use high-contrast colors and large, legible fonts so reading is never a struggle.</p>
+          <a href="#" class="card-link">Learn more about readability <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="card" role="listitem">
+          <div class="card-icon" aria-hidden="true">⌨️</div>
+          <h3>Keyboard Friendly</h3>
+          <p>Every part of this site works without a mouse — navigate fully with just your keyboard.</p>
+          <a href="#" class="card-link">Learn more about keyboard access <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="card" role="listitem">
+          <div class="card-icon" aria-hidden="true">📢</div>
+          <h3>Screen Reader Ready</h3>
+          <p>Proper ARIA labels and semantic HTML ensure screen readers announce content correctly.</p>
+          <a href="#" class="card-link">Learn more about screen readers <span aria-hidden="true">→</span></a>
+        </article>
+
+      </div>
+    </section>
+
+    <!--About-->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-title">About Us</h2>
+      <div class="about-block">
+        <p>BrightPath is a company dedicated to making information accessible to all people — including those with visual, motor, cognitive, or hearing disabilities.</p>
+        <p>We follow the <strong>Web Content Accessibility Guidelines (WCAG 2.1)</strong> and aim for at least AA compliance across all our pages.</p>
+
+        <h3 class="sub-heading">What we follow</h3>
+        <ul class="feature-list" role="list">
+          <li><span class="check" aria-hidden="true">✔</span> High color contrast (4.5:1 minimum ratio)</li>
+          <li><span class="check" aria-hidden="true">✔</span> Descriptive link text — no "click here"</li>
+          <li><span class="check" aria-hidden="true">✔</span> Alt text on every meaningful image</li>
+          <li><span class="check" aria-hidden="true">✔</span> Resizable text up to 200% without loss of content</li>
+          <li><span class="check" aria-hidden="true">✔</span> Visible focus indicators for keyboard users</li>
+          <li><span class="check" aria-hidden="true">✔</span> Semantic HTML landmarks (header, nav, main, footer)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-title">Contact Us</h2>
+      <p class="section-desc">Have a question? Fill out the form below and we'll get back to you.</p>
+
+      <form class="contact-form" novalidate aria-label="Contact form">
+
+        <div class="form-group">
+          <label for="name">Full Name <span class="required" aria-label="required">*</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" placeholder="e.g. Maria Santos" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" placeholder="you@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message <span class="required" aria-label="required">*</span></label>
+          <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Write your message here…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!--FOOTER-->
+  <footer role="contentinfo">
+    <p>&copy; 2026 BrightPath. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul role="list">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility Statement</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
