@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    color: green !important; 
+}
+
+p {
+    color: red;
+}
+
+header {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+}
+
+#header {
+    border-bottom: 2px solid orange;
+}
+
+header + main {
+    border-top: 1px solid gray;
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: black;
+}
+
+.highlight {
+    background-color: orange;
+    color: white;
+    padding: 4px;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+
+a[href^="mailto:"] {
+    color: orange;
+}
+
+a:hover {
+    color: white;
+}

@@ -1,0 +1,135 @@
+header {
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    padding-bottom: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #2c3e50;
+    margin: 10px;
+    background-color: #ecf0f1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.product-image {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.product-details {
+    visibility: hidden;
+}
+
+.product-specs {
+    border: 2px solid #2c3e50;
+    border-collapse: collapse;
+    margin: 30px 0;
+    width: 344px;
+}
+
+.product-specs th, .product-specs td {
+    border: 1px solid #34495e;
+    padding: 12px;
+    text-align: left;
+}
+
+.product-specs tr:nth-child(even) {
+    background-color: #bdc3c7;
+}
+
+.product-specs tr:nth-child(odd) {
+    background-color: #ecf0f1;
+}
+
+.product-specs tr:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.contact-form {
+    display: none;
+    width: 344px;
+}
+
+fieldset {
+    border: 2px solid #2c3e50;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-weight: bold;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 5px;
+    color: #2c3e50;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+}
